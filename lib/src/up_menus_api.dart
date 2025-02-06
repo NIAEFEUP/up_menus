@@ -45,7 +45,7 @@ class UPMenusApi {
   }
 
   Future<String> _get(String path) {
-    return _getImpl('$_baseUrl/$path');
+    return _getImpl(_baseUrl + path);
   }
 
   Future<String> _getImpl(String url) async {
